@@ -13,6 +13,7 @@ mindmetrics_app/build/
 mindmetrics_app/.dart_tool/
 mindmetrics_app/.flutter-plugins
 mindmetrics_app/.flutter-plugins-dependencies
+mindmetrics_app/lib/firebase_options.dart
 
 # IDE / Editor Files
 mindmetrics_app/.idea/
