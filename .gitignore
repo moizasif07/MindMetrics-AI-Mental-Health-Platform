@@ -1,0 +1,48 @@
+# ==========================================
+# FRONTEND (Flutter - mindmetrics_app)
+# ==========================================
+# Secrets & Firebase
+mindmetrics_app/.env
+mindmetrics_app/android/app/google-services.json
+mindmetrics_app/ios/Runner/GoogleService-Info.plist
+mindmetrics_app/firebase_options.dart
+mindmetrics_app/firebase/
+
+# Flutter Build Files (This blocks the 1.65 GB bloat)
+mindmetrics_app/build/
+mindmetrics_app/.dart_tool/
+mindmetrics_app/.flutter-plugins
+mindmetrics_app/.flutter-plugins-dependencies
+
+# IDE / Editor Files
+mindmetrics_app/.idea/
+mindmetrics_app/*.iml
+
+# ==========================================
+# BACKEND (Python/FastAPI - backend)
+# ==========================================
+# Secrets
+backend/.env
+
+# Local Database
+backend/mindmetrics.db
+backend/*.db
+backend/*.sqlite3
+
+# Heavy AI Vector Files
+backend/faiss_cbt_index/
+backend/*.pkl
+backend/*.faiss
+
+# Python Cache & Environments
+backend/__pycache__/
+backend/*.pyc
+backend/venv/
+backend/env/
+
+# ==========================================
+# GENERAL / OS FILES
+# ==========================================
+.vscode/
+.DS_Store
+Thumbs.db

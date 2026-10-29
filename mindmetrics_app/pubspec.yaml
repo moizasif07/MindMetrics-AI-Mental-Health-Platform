@@ -1,0 +1,75 @@
+name: mindmetrics_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+  # For rendering SVG images inside the app UI
+  flutter_svg: ^2.0.10+1  
+
+  # Standard icons and utilities
+  cupertino_icons: ^1.0.8
+  intl: ^0.20.2
+  
+  # Backend and Database (REST API & Firebase)
+  http: ^1.6.0
+  firebase_core: ^4.11.0
+  firebase_auth: ^6.5.4
+  cloud_firestore: ^6.6.0
+  
+  # Data Visualization/Graphs
+  fl_chart: ^0.68.0
+  flutter_dotenv: ^6.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Recommended lints for good coding practices
+  flutter_lints: ^5.0.0
+  
+  # NEW: For generating the app's launcher icon on Android & iOS
+  flutter_launcher_icons: ^0.13.1
+
+# Definition for generating the launcher icon
+flutter_icons:
+  android: true
+  ios: true
+  # Make sure you have converted gemini.svg to a PNG and placed it here:
+  image_path: "assets/app_logo.png"
+  remove_alpha_ios: true
+
+# Specific to Flutter packages.
+flutter:
+
+  # Ensures that the Material Icons font is included
+  uses-material-design: true
+  
+  assets:
+    - assets/app_logo.png
+    - .env
+
+
+ 
+    
